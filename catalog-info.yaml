@@ -7,6 +7,9 @@ metadata:
     github.com/project-slug: veecode-homolog/spect-test-1824
     backstage.io/techdocs-ref: dir:.
     github.com/workflows: spec_project.yml
+  links:
+    - title: /viacep
+      url: http://vkpr.platform.vee.codes/viacep
 spec:
   type: devops
   lifecycle: experimental
