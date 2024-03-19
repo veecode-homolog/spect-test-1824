@@ -11,8 +11,8 @@ metadata:
     - title: /viacep
       url: http://vkpr.platform.vee.codes/viacep
 spec:
-  type: website
+  type: devops
   lifecycle: experimental
   owner: "group:default/admin"
   providesApis:
-    - spec-test-1824
+    - api-demo
