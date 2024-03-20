@@ -71,6 +71,7 @@ jobs:
       - name: Generate kube config with k3s  		
         run: |
           HOST=`aws ec2 describe-instances --filters 'Name=tag:Name,Values=cluster-veecode'  --output text --query 'Reservations[*].Instances[*].PublicIpAddress'`
+          echo "HOST: $HOST"
           ssh -i ./cert.pem -o StrictHostKeyChecking=no $USERNAME@$HOST "mkdir -p .kube && k3d kubeconfig get k3s > ~/.kube/config"
           echo "Host=$HOST" >> $GITHUB_ENV
           
